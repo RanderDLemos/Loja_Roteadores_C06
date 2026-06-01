@@ -1,4 +1,4 @@
-package Cliente;
+package br.inatel.lojaDeRoteadores.utils;
 
 public class Cliente {
 
@@ -7,7 +7,7 @@ public class Cliente {
 
 
     public Cliente(String nome, String CNPJ){
-        this,nome = nome;
+        this.nome = nome;
         this.CNPJ = CNPJ;
     }
 
