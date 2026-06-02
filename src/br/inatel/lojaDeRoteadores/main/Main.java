@@ -37,6 +37,28 @@ public class Main {
 
         System.out.println("Pedido iniciado com sucesso. Preparando catálogo...");
 
+        System.out.println("-- Roteadores disponiveis --");
+        for(int i = 0; i < catalogo.length; i++){
+            System.out.print((i + 1) + ". ");
+            catalogo[i].mostrarInfo();
+        }
+        System.out.println("0. Finalizar Pedido.");
+        System.out.println("____________________");
+
+        boolean comprando = true;
+        while (comprando){
+
+            System.out.println("Digite o código do roteador desejado: ");
+            try{
+
+
+            }catch (R){
+
+
+            }
+
+        }
+
         entrada.close();
     }
 }

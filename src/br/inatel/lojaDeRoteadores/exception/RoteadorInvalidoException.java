@@ -1,8 +1,5 @@
 package br.inatel.lojaDeRoteadores.exception;
 
-public class RoteadorInvalidoException {
-
-    public RoteadorInvalidoException(String mensagem) {
-        super(mensagem);
-
+public class RoteadorInvalidoException extends Exception{
+    public RoteadorInvalidoException(String mensagem) { super(mensagem); }
 }

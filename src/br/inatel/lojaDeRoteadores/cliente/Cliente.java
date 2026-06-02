@@ -1,4 +1,4 @@
-package br.inatel.lojaDeRoteadores.utils;
+package br.inatel.lojaDeRoteadores.cliente;
 
 public class Cliente {
 
