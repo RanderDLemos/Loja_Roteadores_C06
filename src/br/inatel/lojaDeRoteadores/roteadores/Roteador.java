@@ -42,4 +42,10 @@ public abstract class Roteador implements Conectavel {
 
     @Override
     public abstract boolean permitirConexao();
+
+    // Na classe Roteador
+    public void conectar() {
+        this.conexao = true;
+        System.out.println("O roteador foi conectado com sucesso!");
+    }
 }
