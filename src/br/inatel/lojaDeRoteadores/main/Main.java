@@ -15,18 +15,9 @@ import java.util.Scanner;
 public class Main {
 
     public static void limparTela() {
-        try {
-            String sistemaOperacional = System.getProperty("os.name");
-
-            if (sistemaOperacional.contains("Windows")) {
-                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-            } else {
-                // Comando "clear" que será executado no Mac/Linux
-                new ProcessBuilder("clear").inheritIO().start().waitFor();
-            }
-        } catch (Exception e) {
-            System.out.println("Erro ao tentar limpar o console: " + e.getMessage());
-        }
+        // Esse código ANSI move o cursor para o topo (H) e limpa a tela (2J)
+        System.out.print("\u001b[H\u001b[2J");
+        System.out.flush();
     }
 
     public static void main(String[] args) {
