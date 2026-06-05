@@ -1,6 +1,7 @@
 package br.inatel.lojaDeRoteadores.pedido;
 
 import br.inatel.lojaDeRoteadores.cliente.Cliente;
+import br.inatel.lojaDeRoteadores.exception.EstoqueEsgotadoException;
 import br.inatel.lojaDeRoteadores.roteadores.Roteador;
 // TODO: Importar a EstoqueEsgotadoException do pacote de excecoes quando a Pessoa 3 criar
 
@@ -17,7 +18,7 @@ public class Pedido {
     }
 
     // TODO: Adicionar "throws EstoqueEsgotadoException" na assinatura do metodo depois
-    public void adicionarRoteador(Roteador roteador) {
+    public void adicionarRoteador(Roteador roteador) throws EstoqueEsgotadoException {
         boolean adicionou = false;
 
         for (int i = 0; i < roteadores.length; i++) {
