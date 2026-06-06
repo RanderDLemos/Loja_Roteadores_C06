@@ -1,6 +1,6 @@
 # Loja de Roteadores - C06 🌐
 
--------------------------------
+---
 
 ## Sobre o Desenvolvimento
 
