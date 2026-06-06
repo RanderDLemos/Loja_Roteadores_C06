@@ -81,16 +81,32 @@ public class Main {
                         throw new RoteadorInvalidoException("Código inválido! Digite entre 1 e 6.\n");
 
                     } else {
+                        // limpa o buffer deixado pelo nextInt() antes de ler o S/N
+                        entrada.nextLine();
 
-                        System.out.print("\nDeseja conectar este roteador agora? (S/N): ");
-                        String opcaoConexao = entrada.next();
+                        boolean opcaoValida = false;
+                        while (!opcaoValida) {
+                            System.out.print("\nDeseja conectar este roteador agora? (S/N): ");
+                            String opcaoConexao = entrada.nextLine().trim();
 
-                        if (opcaoConexao.equalsIgnoreCase("S")) {
-                            catalogo[codigo - 1].conectar();
+                            if (opcaoConexao.equalsIgnoreCase("S")) {
+                                catalogo[codigo - 1].conectar();
+                                opcaoValida = true;
+
+                            } else if (opcaoConexao.equalsIgnoreCase("N")) {
+                                opcaoValida = true; // não conecta, só segue
+
+                            } else {
+                                try {
+                                    throw new EntradaInvalidaException(
+                                            "Opção inválida! Digite apenas S para sim ou N para não."
+                                    );
+                                } catch (EntradaInvalidaException e) {
+                                    System.out.println("\n-> " + e.getMessage());
+                                    // loop continua pedindo até receber S ou N
+                                }
+                            }
                         }
-
-                        pedidoAtual.adicionarRoteador(catalogo[codigo - 1]);
-                        System.out.println("\n-> Roteador adicionado ao pedido com sucesso!\n");
 
                         pedidoAtual.adicionarRoteador(catalogo[codigo - 1]);
                         System.out.println("\n-> Roteador adicionado ao pedido com sucesso!\n");
@@ -125,11 +141,11 @@ public class Main {
             System.out.print("Opção: ");
 
             int opcao = entrada.nextInt();
-            entrada.nextLine(); // Limpa o buffer após o nextInt()
+            entrada.nextLine(); // limpa o buffer após o nextInt()
 
             if (opcao == 2) {
                 sistemaRodando = false;
-                System.out.println("Muito obrigado pela preferencia!");
+                System.out.println("Muito obrigado pela preferência!");
                 System.out.println("Seu pedido já vai começar a ser preparado...");
             }
         }
