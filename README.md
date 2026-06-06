@@ -2,6 +2,16 @@
 
 -------------------------------
 
+## Sobre o Desenvolvimento
+
+Durante a construção deste sistema, utilizamos ferramentas de IA (como Claude e Gemini) como aliadas no processo. O foco dessa colaboração não foi deixar a ferramenta desenvolver o projeto por nós, mas sim utilizá-la como um suporte estratégico para:
+
+* **Organização e Estrutura:** Auxílio na arquitetura das classes e organização dos pacotes.
+* **Refinamento de POO:** Garantir que os conceitos de Orientação a Objetos estivessem sendo aplicados da melhor forma possível.
+* **Resolução de Problemas:** Apoio na depuração de erros e no ajuste de lógicas complexas que precisavam de um olhar mais detalhado.
+
+-------------------------------
+
 ## Estrutura do Projeto (UML)
 
 <br>
@@ -10,10 +20,4 @@
 
 -------------------------------
 
-## Sobre o Desenvolvimento
-
-Durante a construção deste sistema, utilizamos ferramentas de IA (como Claude e Gemini) como aliadas no processo. O foco dessa colaboração não foi deixar a ferramenta desenvolver o projeto por nós, mas sim utilizá-la como um suporte estratégico para:
-
-* **Organização e Estrutura:** Auxílio na arquitetura das classes e organização dos pacotes.
-* **Refinamento de POO:** Garantir que os conceitos de Orientação a Objetos estivessem sendo aplicados da melhor forma possível.
-* **Resolução de Problemas:** Apoio na depuração de erros e no ajuste de lógicas complexas que precisavam de um olhar mais detalhado.
+Desenvolvimento por: Matheus Reis, Pedro Leite, Rander Augusto e Samuel Milan
