@@ -14,12 +14,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void limparTela() {
-        // Esse código ANSI move o cursor para o topo (H) e limpa a tela (2J)
-        System.out.print("\u001b[H\u001b[2J");
-        System.out.flush();
-    }
-
     public static void main(String[] args) {
 
         Scanner entrada = new Scanner(System.in);
@@ -39,7 +33,6 @@ public class Main {
 
         // Loop principal do sistema (Permite fazer novos pedidos ou sair)
         while (sistemaRodando) {
-            limparTela();
             System.out.println("Bem-vindo ao sistema de pedidos de Roteadores!");
             System.out.print("Digite o nome do Cliente: ");
             String nomeCliente = entrada.nextLine();
@@ -88,8 +81,6 @@ public class Main {
                         throw new RoteadorInvalidoException("Código inválido! Digite entre 1 e 6.\n");
 
                     } else {
-                        // Conecta o roteador (certifique-se de que o método conectar() existe na classe Roteador)
-                        // catalogo[codigo - 1].conectar();
 
                         System.out.print("\nDeseja conectar este roteador agora? (S/N): ");
                         String opcaoConexao = entrada.next();
@@ -117,8 +108,6 @@ public class Main {
                 }
             }
 
-            // Finalização — após sair do loop de compras
-            limparTela();
             System.out.println("\n=== RESUMO DO PEDIDO ===");
             pedidoAtual.processarPedido();
             float totalCompra = pedidoAtual.calcularTotalCompra();
@@ -140,7 +129,6 @@ public class Main {
 
             if (opcao == 2) {
                 sistemaRodando = false;
-                limparTela();
                 System.out.println("Muito obrigado pela preferencia!");
                 System.out.println("Seu pedido já vai começar a ser preparado...");
             }

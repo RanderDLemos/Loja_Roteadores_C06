@@ -3,7 +3,6 @@ package br.inatel.lojaDeRoteadores.pedido;
 import br.inatel.lojaDeRoteadores.cliente.Cliente;
 import br.inatel.lojaDeRoteadores.exception.EstoqueEsgotadoException;
 import br.inatel.lojaDeRoteadores.roteadores.Roteador;
-// TODO: Importar a EstoqueEsgotadoException do pacote de excecoes quando a Pessoa 3 criar
 
 public class Pedido {
 
@@ -17,7 +16,6 @@ public class Pedido {
         this.totalItens = 0;
     }
 
-    // TODO: Adicionar "throws EstoqueEsgotadoException" na assinatura do metodo depois
     public void adicionarRoteador(Roteador roteador) throws EstoqueEsgotadoException {
         boolean adicionou = false;
 
@@ -32,7 +30,6 @@ public class Pedido {
         }
 
         if (!adicionou) {
-            // TODO: Substituir o print por: throw new EstoqueEsgotadoException("Carrinho cheio!");
             System.out.println("Erro: O limite do carrinho está cheio.");
         }
     }
@@ -42,7 +39,6 @@ public class Pedido {
 
         for (int i = 0; i < roteadores.length; i++) {
             if (roteadores[i] != null) {
-                // Polimorfismo sendo executado aqui:
                 total += roteadores[i].calcularTotal();
             }
         }
