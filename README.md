@@ -1,10 +1,19 @@
-# Loja_Roteadores_C06
+# Loja de Roteadores - C06 🌐
 
-                                                                      UML do projeto:
+-------------------------------
 
-  <img width="621" height="1111" alt="UML_Finalizado_POO drawio-2" src="https://github.com/user-attachments/assets/0cb35fb2-69e8-4b1a-88aa-5136b50d2278" />
-          
+## Estrutura do Projeto (UML)
 
-Sobre o desenvolvimento do projeto:
+<br>
+<img width="621" alt="UML_Finalizado_POO" src="https://github.com/user-attachments/assets/0cb35fb2-69e8-4b1a-88aa-5136b50d2278" />
+<br>
 
-    Durante o desenvolvimento, utilizamos algumas IA's para facilitar no desenvolvimento. Utilizamos algumas como Claude e gemini, para ajudar a orgnizar melhor o projeto. Tambem para termos certeza de que estavamos aplicando corretamente os conceitos de POO. Nao usamos para desenvolver no noso lugar, mas para facilitar na hora de programar. Usamos para consertar alguns erros no codigo e para corrigir algumas logicas que nao implementamos corretamente. 
+-------------------------------
+
+## Sobre o Desenvolvimento
+
+Durante a construção deste sistema, utilizamos ferramentas de IA (como Claude e Gemini) como aliadas no processo. O foco dessa colaboração não foi deixar a ferramenta desenvolver o projeto por nós, mas sim utilizá-la como um suporte estratégico para:
+
+* **Organização e Estrutura:** Auxílio na arquitetura das classes e organização dos pacotes.
+* **Refinamento de POO:** Garantir que os conceitos de Orientação a Objetos estivessem sendo aplicados da melhor forma possível.
+* **Resolução de Problemas:** Apoio na depuração de erros e no ajuste de lógicas complexas que precisavam de um olhar mais detalhado.
