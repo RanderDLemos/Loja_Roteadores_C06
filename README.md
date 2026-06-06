@@ -1,4 +1,4 @@
-# Loja de Roteadores - C06 🌐
+# Loja de Roteadores - C06 
 
 ---
 
