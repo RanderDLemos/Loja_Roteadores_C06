@@ -20,4 +20,4 @@ Durante a construção deste sistema, utilizamos ferramentas de IA (como Claude 
 
 -------------------------------
 
-Desenvolvimento por: Matheus Reis, Pedro Leite, Rander Augusto e Samuel Milan
+**Desenvolvido por:** Matheus Reis, Pedro Leite, Rander Augusto e Samuel Milan
